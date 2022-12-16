@@ -1,0 +1,181 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CUbuntu:300,400,500,700" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/plyr.css' %}">
+	<link rel="stylesheet" href="{% static 'css/photoswipe.css' %}">
+	<link rel="stylesheet" href="{% static 'css/default-skin.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="{% static 'icon/cta-illustration.svg' %}" sizes="32x32">
+	<link rel="apple-touch-icon" href="{% static 'icon/cta-illustration.svg' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'icon/cta-illustration.svg' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'icon/cta-illustration.svg' %}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{% static 'icon/cta-illustration.svg' %}">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>DINI Predictx</title>
+
+</head>
+<body class="body">
+	
+	<!-- header -->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__content">
+							<!-- header logo -->
+							<a href="#" class="header__logo">
+								<img src="{% static 'img/feature-icon-01.svg' %}" alt="">
+							</a>
+							<div class="header__auth">
+								<a href="{% url 'result'  %}" class="header__sign-in">
+									<i class="icon ion-ios-log-in"></i>
+									<span>VIEW RESULTS</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- content tabs -->
+
+			<div class="tab-content" id="myTabContent">
+
+				
+				<div class="col-12">
+					<div class="sign__content">
+						<!-- registration form -->
+						<form action="#" class="sign__form" method="POST">
+							<span>
+								<ul>
+								<li>
+							{% csrf_token %}
+							<a href="#" class="sign__logo">
+								<h1>HOME TEAM</h1>
+							</a>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="home_name" placeholder="HOME TEAM NAME">
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="home_scored" placeholder="AVG goal scored at HOME">
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="home_conceded" placeholder="AVG goal conceded at HOME">
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="home_league_avg"  placeholder="League AVG goal scored at HOME">
+							</div>
+							</li>
+							<li>
+							<a href="#" class="sign__logo">
+								<h1>AWAY TEAM</h1>
+							</a>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="away_name" placeholder="AWAY TEAM NAME">
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="away_scored" placeholder="AVG goal scored at AWAY">
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="away_conceded" placeholder="AVG goal conceded at AWAY">
+							</div>
+
+							<div class="sign__group">
+								<input type="text" class="sign__input" name="away_league_avg" placeholder="League AVG goal scored at AWAY">
+							</div>
+
+							
+							
+						<!-- 	<button class="sign__btn" type="button">Sign up</button> -->
+					</li>
+				</ul>
+			</span>
+						<button class="sign__btn" type="submit" id="predict">PREDICT</button>
+						
+						</form>
+					</div>
+					
+				</div>
+				
+							</div>
+				</div>
+						</div>
+					</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<button class="sign__btn" type="button">PLEASE NOTE, ONLY THE FIRST 20 RESULTS WILL BE SAVED AND DISPLAYED</button>
+	
+				</div>
+				
+
+				
+			</div>
+			<!-- end content tabs -->
+		</div>
+		
+	</section>
+	
+		<!-- end content tabs -->
+	</div>
+	<!-- end content -->
+
+
+	<!-- JS -->
+	<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.mCustomScrollbar.min.js' %}"></script>
+	<script src="{% static 'js/wNumb.js' %}"></script>
+	<script src="{% static 'js/nouislider.min.js' %}"></script>
+	<script src="{% static 'js/plyr.min.js' %}"></script>
+	<script src="{% static 'js/jquery.morelines.min.js' %}"></script>
+	<script src="{% static 'js/photoswipe.min.js' %}"></script>
+	<script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
